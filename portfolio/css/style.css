@@ -1,0 +1,186 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0d0d2b; /* Deep space blue */
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Header Banner */
+header {
+  background: 
+    linear-gradient(rgba(2, 14, 51, 0.6), rgba(9, 7, 26, 0.6)),
+    url('https://wallpapers.com/images/high/dark-space-wallpaper-0mh5r43wp68yf29o.webp') no-repeat center center;
+  background-size: cover;
+}
+
+/* About Section */
+#about {
+  margin-top: 120px;
+  scroll-margin-top: 100px;
+}
+
+.about-text {
+  text-align: justify;
+}
+
+/* Section Spacing */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Footer */
+footer {
+  background-color: #066a68;
+}
+
+/* Skill Circles (Round Ones) */
+.skill-circle {
+  width: 130px;
+  height: 130px;
+  background-color: #bfe5f0;
+ color: #13022e;
+  text-shadow: 0 0 6px #fdffff, 0 0 12px #e7e9ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px;
+  text-align: center;
+  font-size: 12px;
+  padding: 12px;
+  word-break: break-word;
+}
+
+/* 🔹 Neon Skill Section */
+.skills-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: 0 0 8px #00ffff, 0 0 12px #8ab6ff;
+}
+
+/* Cards Layout */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Card Styling (Neon Glow + Custom Text Color) */
+.card {
+  background: linear-gradient(145deg, #000032, #000033);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(214, 216, 216, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fffaff; /* 💡 Change this for card text color */
+  font-weight: 500;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+}
+h2 {
+  font-size: 2.5rem;
+  color:  #02132d;
+  text-shadow: 0 0 6px #ffffff, 0 0 12px #ffffff;
+}
+
+/* Project card background & hover */
+#projects .card {
+  background: linear-gradient(145deg, #1a1a2e, #16213e);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
+}
+
+/* Title glow in a NEW neon shade (e.g. electric cyan) */
+#projects .card-title {
+  color: #00ffff;
+  text-shadow: 0 0 6px #00ffff, 0 0 12px #00e5e5;
+}
+
+/* Description: Plain white, no glow */
+#projects .card-text {
+  color: white;
+  text-shadow: none;
+}
+
+
+#exp .card {
+  background: linear-gradient(145deg, #1a1a2e, #16213e);
+  border-radius: 15px;
+  border: none;
+  color: #ffccff;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#exp .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
+}
+
+#exp h4 {
+  color: #75e7f6;
+  text-shadow: 0 0 6px #2ebfe8, 0 0 12px #47f1e6;
+}
+
+#exp h6.text-muted {
+  color: white !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+#exp .bg-warning {
+  background-color: #f4f3f0 !important; /* Optional: tweak to match neon vibe */
+  box-shadow: 0 0 10px #f3f3f1;
+}
+.card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  border-radius: 25px;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff inset;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .btn:hover {
+  background-color: #00ffff;
+  color: #0d0d2b;
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
